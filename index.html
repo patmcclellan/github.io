@@ -19,7 +19,6 @@
 
 <div id="error-message"></div>
 </body>
-</html>
 <script>
 (function() {
   var stripe = Stripe('pk_live_zmwn2IaodIo4HV3NCEDy3Qqz');
@@ -36,8 +35,8 @@
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'http://www.protontext.com/success',
-      cancelUrl: 'http://www.protontext.com/canceled',
+      successUrl: 'https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3h000002FhB3',
+      cancelUrl: 'https://proton7group.force.com/toaster/s/',
     })
     .then(function (result) {
       if (result.error) {
@@ -50,3 +49,5 @@
   });
 })();
 </script>
+
+</html>

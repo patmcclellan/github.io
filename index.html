@@ -20,7 +20,8 @@
 <div id="error-message"></div>
 </body>
 <script>
-(function() {
+    document.addEventListener("DOMContentLoaded", function(){
+ 
   var stripe = Stripe('pk_live_zmwn2IaodIo4HV3NCEDy3Qqz');
 
   var checkoutButton = document.getElementById('checkout-button-plan_H9XNK14zoVX0HD');
